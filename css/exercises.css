@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+}
+
+body{
+    background: #000;
+}
+
+section{
+    padding: 5rem 9%;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9%;
+    z-index: 10000;
+    background: #000;
+}
+
+.logo{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+span{
+    color: #FF2625;
+}
+
+/* .navbar a{
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+} */
+
+a:hover{
+    background: #FF2625;
+}
+
+#menu-btn{
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.heading{
+    font-size: 4rem;
+    color: #FF2625;
+    text-align: center;
+}
+
+h2{
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#app-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+    gap: 24px;
+}
+
+.tracker {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+.tracker,
+.tracker * {
+    font-family: sans-serif;
+}
+
+.tracker th {
+    font-size: 1.15em;
+    text-align: left;
+    font-weight: normal;
+    color: #ffffff;
+    background: #009578;
+}
+
+.tracker th,
+.tracker td {
+    padding: 0.75em;
+}
+
+.tracker__entries .tracker__row {
+    background: #eeeeee;
+}
+
+.tracker__entries .tracker__row:nth-child(odd) {
+    background: #dddddd;
+}
+
+.tracker__date,
+.tracker__workout,
+.tracker__duration {
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 1em;
+    height: 2.5em;
+    padding: 0.5em 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.tracker__duration {
+    width: 5em;
+    text-align: right;
+}
+
+.tracker__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    color: red;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+.tracker__button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.tracker__row--add {
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
+    background: #ffffff;
+}
+
+.tracker__row--add td {
+    text-align: right;
+}
+
+.tracker__add {
+    display: inline-block;
+    padding: 0.8em 1em;
+    color: green;
+    cursor: pointer;
+}
+
+.tracker__add:hover {
+    background:rgba(0, 0, 0, 0.1);
+}
